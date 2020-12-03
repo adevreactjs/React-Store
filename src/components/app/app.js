@@ -1,23 +1,25 @@
-import React from 'react'
-import '../app/app.css'
-import {Route, Switch} from 'react-router-dom'
-import {HomePage, CartPage} from '../pages'
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import { HomePage, CartPage } from '../pages';
+
+import './app.css';
 
 const App = () => {
-    return (
-        <Switch>
-            <Route path="/"
-            component={HomePage}
-            exact> 
-            </Route>
+  return (
+      <main role="main" className="container">
+    <Switch>
+      <Route
+        path="/"
+        component={HomePage}
+        exact />
 
-            <Route path="/cart"
-            component={CartPage}
-            exact> CartPage
+      <Route
+        path="/cart"
+        component={CartPage}
+        />
+    </Switch>
+    </main>
+  );
+};
 
-            </Route>
-        </Switch>
-    )
-}
-
-export default (App)
+export default App;
