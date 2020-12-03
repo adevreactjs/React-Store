@@ -7,7 +7,7 @@ const withBookstoreService = () => (Wrapped) => {
             <BookstoreServiceConsumer>
                 {
                     (bookstoreService) => {
-                        <Wrapped {...props} bookstoreService ={bookstoreService}></Wrapped>
+                        <Wrapped {...props} bookstoreService={bookstoreService}></Wrapped>
                     }
                 }
             </BookstoreServiceConsumer> 
