@@ -6,6 +6,6 @@ const booksLoaded = (newBooks) => {
   };
 };
 
-export  {
+export {
   booksLoaded
 };
